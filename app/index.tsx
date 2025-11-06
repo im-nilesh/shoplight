@@ -1,16 +1,6 @@
-import { Link } from "expo-router";
-import { View } from "react-native";
+import { Redirect } from "expo-router";
+import React from "react";
 
 export default function Index() {
-  return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Link href={"/notifications"}>Visit Notification Screen</Link>
-    </View>
-  );
+  return <Redirect href="/(tabs)" />;
 }
